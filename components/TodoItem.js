@@ -5,7 +5,6 @@ import CreateIcon from '@material-ui/icons/Create';
 import { useDispatch, useSelector } from "react-redux";
 import { deleteTodo, selectEditTodo } from "../redux/todo/todoActions"
 import styled from "styled-components"
-import { darken } from '@material-ui/core/styles';
 
 const TodoText = styled(ListItemText)`
 text-decoration: 
