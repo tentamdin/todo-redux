@@ -1,5 +1,4 @@
 import * as React from "react";
-import Box from "@material-ui/core/Box";
 import Link from "@material-ui/core/Link";
 import { styled } from "@material-ui/styles";
 import AppBar from "@material-ui/core/AppBar";
