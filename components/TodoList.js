@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Checkbox, List, ListItem, ListItemIcon, } from "@material-ui/core";
+import { Checkbox, List, ListItem, ListItemIcon, } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { completedTodo, } from "../redux/todo/todoActions";
 import EditTodo from './EditTodo';

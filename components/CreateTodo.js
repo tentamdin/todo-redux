@@ -5,8 +5,8 @@ import {
   Typography,
   Button,
   TextField,
-} from "@material-ui/core";
-import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
+} from "@mui/material";
+import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
 import styled from "styled-components";
 import { useDispatch, } from "react-redux";
 import { addTodo } from "../redux/todo/todoActions"

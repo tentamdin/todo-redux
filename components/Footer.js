@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link, Typography } from '@material-ui/core';
+import { Link, Typography } from '@mui/material';
 import * as React from "react";
 
 

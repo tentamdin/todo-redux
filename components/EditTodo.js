@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { ListItemSecondaryAction, TextField, } from "@material-ui/core"
-import CloseIcon from '@material-ui/icons/Close';
-import DoneIcon from '@material-ui/icons/Done';
+import { ListItemSecondaryAction, TextField, } from "@mui/material"
+import CloseIcon from '@mui/icons-material/Close';
+import DoneIcon from '@mui/icons-material/Done';
 import { useDispatch, } from "react-redux";
 import { cancelEditTodo, editTodo } from "../redux/todo/todoActions"
 import styled from "styled-components"

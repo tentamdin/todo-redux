@@ -1,9 +1,8 @@
 import * as React from "react";
-import Link from "@material-ui/core/Link";
-import { styled } from "@material-ui/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-
+import Link from "@mui/material/Link";
+import { styled } from "@mui/styles";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
 
 const Nav = styled(Toolbar)({
   background: "black",
@@ -17,7 +16,7 @@ const NavLink = styled(Link)({
   color: "white",
   padding: "0 2.5rem",
   fontFamily: "Aleo",
-  textAlign: "center"
+  textAlign: "center",
 });
 
 const Navbar = () => {
@@ -32,7 +31,7 @@ const Navbar = () => {
       <AppBar position="static" color="transparent">
         <Nav>
           <NavLink href="#" underline="none" variant="h5">
-            Just a another Todo app
+            Create Your Todo List
           </NavLink>
         </Nav>
       </AppBar>

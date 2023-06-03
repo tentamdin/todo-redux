@@ -1,12 +1,12 @@
-import Container from '@material-ui/core/Container';
-import CreateTodo from '../components/CreateTodo';
-import TodoList from '../components/TodoList';
+import Container from "@mui/material/Container";
+import CreateTodo from "../components/CreateTodo";
+import TodoList from "../components/TodoList";
 import styled from "styled-components";
 
 const CustomContainer = styled(Container)({
-  height: "100vh",
+  height: "87vh",
   padding: "2rem",
-})
+});
 
 export default function Home() {
   return (
