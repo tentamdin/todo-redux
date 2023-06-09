@@ -8,12 +8,11 @@ import {
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "../src/theme";
 import { Provider } from "react-redux";
-import { useStore } from "../redux/store";
 import Layout from "../components/Layout";
 import { ThemeProvider } from "styled-components";
+import store from "../redux/store";
 export default function MyApp(props) {
   const { Component, pageProps } = props;
-  const store = useStore(pageProps.initialReduxState);
 
   React.useEffect(() => {
     // Remove the server-side injected CSS.

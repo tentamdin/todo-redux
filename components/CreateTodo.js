@@ -8,10 +8,8 @@ import {
 } from "@mui/material";
 import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
 import styled from "styled-components";
-import { useDispatch, } from "react-redux";
-import { addTodo } from "../redux/todo/todoActions"
-
-
+import { useDispatch } from "react-redux";
+import { addTodo } from "../redux/todo/todosSlice";
 
 const CreateBtn = styled(Button)({
   border: "none",
@@ -24,31 +22,30 @@ const Content = styled(CardContent)({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  textAlign: "center"
+  textAlign: "center",
 });
 
 const StyledDiv = styled.div`
-  @media (max-width:430px) {
+  @media (max-width: 430px) {
     & > * {
       margin-top: 0.5rem;
     }
   }
- `;
-
-
-
-const apiKey = process.env.NEXT_PUBLIC_GIPHY_KEY;
+`;
 
 const CreateTodo = (props) => {
-  const [itemValue, setItemValue] = useState('');
+  const [itemValue, setItemValue] = useState("");
   const dispatch = useDispatch();
 
-  const handleItemChange = ev => setItemValue(ev.target.value);
+  const handleItemChange = (e) => {
+    setItemValue(e.target.value);
+  };
 
-  const handleSubmitAndResetForm = ev => {
-    ev.preventDefault();
+  const handleSubmitAndResetForm = (e) => {
+    e.preventDefault();
     dispatch(addTodo(itemValue));
-    setItemValue('');
+    console.log("adding todo text ", itemValue);
+    setItemValue("");
   };
 
   return (
