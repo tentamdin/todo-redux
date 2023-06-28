@@ -44,7 +44,6 @@ const CreateTodo = (props) => {
   const handleSubmitAndResetForm = (e) => {
     e.preventDefault();
     dispatch(addTodo(itemValue));
-    console.log("adding todo text ", itemValue);
     setItemValue("");
   };
 

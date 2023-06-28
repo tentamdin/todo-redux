@@ -19,9 +19,7 @@ const EditTodo = (props) => {
   const dispatch = useDispatch();
 
   const handleItemChange = (ev) => {
-    console.log("props todo", props.todo);
     setItemValue(ev.target.value);
-    console.log("setItemValue", itemValue);
   };
 
   const handleEditAndResetForm = (ev) => {
